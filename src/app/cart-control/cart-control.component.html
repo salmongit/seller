@@ -1,0 +1,7 @@
+<div class="cartcontrol">
+  <div class="cart-decrease" *ngIf="food['count'] > 0" [@move]="stateExpression" (click)="decreaseCart($event)">
+    <span class="inner icon-remove_circle_outline"></span>
+  </div>
+  <div class="cart-count" *ngIf="food['count'] > 0">{{food['count']}}</div>
+  <div class="cart-add icon-add_circle" (click)="addCart($event)"></div>
+</div>
